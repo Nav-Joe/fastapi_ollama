@@ -21,5 +21,5 @@
 ollama pull qwen2.5:3b
 
 ## 2.docker化部署：
-docker build -t ai_service .
-docker run -p 8000:8000 -e OLLAMA_HOST=http://host.docker.internal:11434 ai-service
+- docker build -t ai_service .
+- docker run -p 8000:8000 -e OLLAMA_HOST=http://host.docker.internal:11434 ai-service
