@@ -8,7 +8,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# 复制你的代码
+# 复制代码
 COPY services.py .
 
 # 暴露端口
