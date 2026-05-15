@@ -20,7 +20,6 @@ class ChatRequest(BaseModel):
 @app.post("/chat")
 async def chat(req: ChatRequest):
     try:
-        # 改用本地模型
         reply = ask_local_model(req.message)
         return {"reply": reply}
     except Exception as e:
