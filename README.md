@@ -23,3 +23,5 @@ ollama pull qwen2.5:3b
 ## 2.docker化部署：
 - docker build -t ai_service .
 - docker run -p 8000:8000 -e OLLAMA_HOST=http://host.docker.internal:11434 ai-service
+
+# 下一个项目：将RAG（langchain架构）整合进本地ollama大模型，方便大模型可根据RAG输出私人知识库。
